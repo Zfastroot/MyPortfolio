@@ -288,7 +288,7 @@ img {
 }
 
 .home__subtitle{
-  font-s ize: var(--h3-font-size);
+  font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
@@ -299,7 +299,7 @@ img {
 }
 
 .home__scroll-button{
-  /* display: none;*/
+  display: none;
 }
 
 .home__scroll-button{
@@ -326,6 +326,30 @@ img {
   font-size: 1.25rem;
 }
 /*==================== BUTTONS ====================*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button__icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
+
 
 
 /*==================== ABOUT ====================*/
