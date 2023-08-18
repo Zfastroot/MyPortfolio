@@ -50,7 +50,23 @@ skillsHeader.forEach((el)=>{
 })
 
 /*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelector('[data-target]'),
+      tabContents = document.querySelector('[data-content]')
 
+tabs.forEach(tab =>{
+    tab.addEventListener('click', ()=>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContents =>{
+            tabContents.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+        tabs.forEach(tab=>{
+            tab.classList.remove('qualification')
+        })
+        tab.classList.add('qualification__active')
+    })
+})
 
 /*==================== SERVICES MODAL ====================*/
 
